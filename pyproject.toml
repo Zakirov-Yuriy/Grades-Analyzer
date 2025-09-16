@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grades-analyzer"
+version = "0.1.0"
+description = "CLI для аналитики успеваемости студентов из CSV"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["tabulate>=0.9"]
+authors = [{name = "Izi Klin", email = "marketplace.consulting.easy.clean@gmail.com"}]
+license = {text = "MIT"}
+
+[project.scripts]
+grades-analyzer = "grades_analyzer.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "--cov=grades_analyzer --cov-report=term-missing"
+testpaths = [
+    "tests",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.4", "pytest-cov>=7.0"]
+
+

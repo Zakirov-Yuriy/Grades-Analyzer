@@ -1,0 +1,38 @@
+# Виртуальные окружения
+venv/
+env/
+.venv/
+ENV/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Логи и временные файлы
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+
+# Папки сборки / дистрибутива
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Настройки IDE
+.idea/
+.vscode/
+*.iml
+
+# Тестовые артефакты
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints
